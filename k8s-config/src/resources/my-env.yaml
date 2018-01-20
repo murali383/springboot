@@ -1,9 +1,3 @@
-# Namespace configuration
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: development
-  
 # Hello Pod1 configuration
 apiVersion: v1
 kind: Pod
