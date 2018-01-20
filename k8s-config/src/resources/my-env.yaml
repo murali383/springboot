@@ -66,4 +66,4 @@ metadata:
   namespace: development
 spec:
   type: ExternalName
-  externalName: https://www.google.com
+  externalName: www.google.com
