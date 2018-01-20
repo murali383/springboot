@@ -4,4 +4,4 @@ metadata:
   name: external-service
 subsets:
   - addresses:
-      - host: www.google.com
+      url: http://www.google.com
