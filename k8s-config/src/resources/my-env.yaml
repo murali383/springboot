@@ -59,11 +59,11 @@ spec:
     targetPort: 8080
     
 # Google Service configuration
-kind: Service
-apiVersion: v1
-metadata:
-  name: google-service
-  namespace: development
-spec:
-  type: ExternalName
-  externalName: www.google.com
+#kind: Service
+#apiVersion: v1
+#metadata:
+#  name: google-service
+#  namespace: development
+#spec:
+#  type: ExternalName
+#  externalName: www.google.com
