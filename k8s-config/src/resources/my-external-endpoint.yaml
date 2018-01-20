@@ -4,6 +4,4 @@ metadata:
   name: external-service
 subsets:
   - addresses:
-      - ip: www.google.com
-    ports:
-      - port: 80
+      - host: www.google.com
