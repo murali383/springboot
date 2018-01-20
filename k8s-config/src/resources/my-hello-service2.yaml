@@ -4,7 +4,7 @@ metadata:
   name: hello-service2
 spec:
   selector:
-    app: hello2
+    app: hello-pod2
   ports:
   - protocol: TCP
     port: 80
