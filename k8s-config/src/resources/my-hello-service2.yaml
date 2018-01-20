@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-service2
+spec:
+  selector:
+    app: hello2
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
