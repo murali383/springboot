@@ -1,0 +1,8 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: google-service
+  namespace: prod
+spec:
+  type: ExternalName
+  externalName: https://www.google.com
