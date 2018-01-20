@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: shell-pod
+  labels:
+    app: shell-pod
+spec:
+  containers:
+  - name: shell-container
+    image: docker pull centos
