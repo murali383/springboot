@@ -3,5 +3,4 @@ apiVersion: v1
 metadata:
   name: external-service
 subsets:
-  - addresses:
-      url: http://www.google.com
+  -- addresses: http://www.google.com
