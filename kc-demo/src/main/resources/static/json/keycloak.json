@@ -1,0 +1,8 @@
+{
+  "realm": "Test",
+  "bearer-only": true,
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "Test",
+  "use-resource-role-mappings": true
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<script type="text/javascript" src="http://localhost:8080/auth/js/keycloak.js"></script>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+			var keycloak = Keycloak({
+				url: 'http://localhost:8080/auth',
+			    realm: 'Test',
+			    clientId: 'Test'
+			});
+			
+			keycloak.init({
+				onLoad: 'login-required',
+				checkLoginIframe : false,
+				flow : 'hybrid'
+			}).success(function(authenticated) {
+	            alert(authenticated ? 'authenticated' : 'not authenticated');
+	        }).error(function() {
+	            alert('failed to initialize');
+	        });
+			
+			/*var xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			     alert(this.responseText);
+			    }
+			  };
+			  xhttp.open("GET", "http://localhost:9090/admin", true);
+			  xhttp.setRequestHeader('Authorization', 'Bearer '+keycloak.token);
+			  xhttp.send();*/
+		</script>
+		<h3>Welcome...</h3>
+	</body>
+</html>
