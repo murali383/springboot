@@ -1,0 +1,9 @@
+kind: Endpoints
+apiVersion: v1
+metadata:
+  name: external-service
+subsets:
+  - addresses:
+      - ip: www.google.com
+    ports:
+      - port: 80

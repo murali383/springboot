@@ -1,8 +1,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: google-service
-  namespace: prod
+  name: external-service
 spec:
-  type: ExternalName
-  externalName: https://www.google.com
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
